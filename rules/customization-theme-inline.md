@@ -1,8 +1,8 @@
 ---
-title: Theme Inline Modifier
-impact: MEDIUM
-impactDescription: Keep CSS variables in output
-tags: theme, inline, css-variables
+title: "Theme Inline Modifier"
+impact: "MEDIUM"
+impactDescription: "Preserves CSS variables for JS usage or third-party libraries."
+tags: ["theme", "inline", "css-variables"]
 ---
 
 ## Theme Inline Modifier

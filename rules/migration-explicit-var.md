@@ -1,8 +1,8 @@
 ---
-title: Explicit var() in Arbitrary Values
-impact: CRITICAL
-impactDescription: Classes silently fail - no CSS output
-tags: migration, v3-to-v4, arbitrary-values, css-variables
+title: "Explicit var() in Arbitrary Values"
+impact: "CRITICAL"
+impactDescription: "Breaking change: implicit var() injection removed. Classes will fail silently."
+tags: ["migration", "v3-to-v4", "arbitrary-values", "css-variables"]
 ---
 
 ## Explicit var() in Arbitrary Values

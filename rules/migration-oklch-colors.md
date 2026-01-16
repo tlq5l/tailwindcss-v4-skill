@@ -1,8 +1,8 @@
 ---
-title: OKLCH Color Space
-impact: HIGH
-impactDescription: v4 defaults to oklch - colors look different
-tags: migration, colors, oklch, p3
+title: "OKLCH Color Space"
+impact: "HIGH"
+impactDescription: "Wider color gamut and predictable mixing; may affect visual regression."
+tags: ["migration", "colors", "oklch", "p3"]
 ---
 
 ## OKLCH Color Space

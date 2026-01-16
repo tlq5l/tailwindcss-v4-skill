@@ -1,8 +1,8 @@
 ---
-title: Vite Integration
-impact: CRITICAL
-impactDescription: Required for new Vite projects
-tags: setup, vite, framework, integration
+title: "Vite Integration"
+impact: "CRITICAL"
+impactDescription: "Significantly faster builds (2-5x) with dedicated Vite plugin vs PostCSS."
+tags: ["setup", "vite", "framework", "integration"]
 ---
 
 ## Vite Integration

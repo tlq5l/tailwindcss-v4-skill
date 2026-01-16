@@ -1,7 +1,7 @@
 ---
 title: "@custom-variant Directive"
-impact: "Defines new custom variants for use in utilities"
-impactDescription: "Use @custom-variant to create reusable variants that can be applied to utilities, simplifying complex selectors."
+impact: "HIGH"
+impactDescription: "Enables powerful custom selectors without complex plugin configuration."
 tags: ["directive", "custom-variant", "customization"]
 ---
 

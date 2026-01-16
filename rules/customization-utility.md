@@ -1,8 +1,8 @@
 ---
-title: Custom Utilities with @utility
-impact: HIGH
-impactDescription: Replaces @layer utilities pattern
-tags: customization, utilities, directives
+title: "Custom Utilities with @utility"
+impact: "HIGH"
+impactDescription: "Standardizes utility creation; eliminates complex @layer utilities syntax."
+tags: ["customization", "utilities", "directives"]
 ---
 
 ## Custom Utilities with @utility

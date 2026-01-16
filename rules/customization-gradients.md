@@ -1,8 +1,8 @@
 ---
-title: New Gradient Syntax
-impact: MEDIUM
-impactDescription: v4 gradient utilities
-tags: gradient, linear, radial, conic
+title: "New Gradient Syntax"
+impact: "MEDIUM"
+impactDescription: "Cleaner syntax and better color interpolation defaults."
+tags: ["gradient", "linear", "radial", "conic"]
 ---
 
 ## New Gradient Syntax

@@ -1,8 +1,8 @@
 ---
-title: Shadow Scale Shift
-impact: CRITICAL
-impactDescription: Visual regression - shadows will be smaller than expected
-tags: migration, v3-to-v4, shadow, scale
+title: "Shadow Scale Shift"
+impact: "CRITICAL"
+impactDescription: "Visual regression risk: shadows scale shifted down one step (shadow -> shadow-sm)."
+tags: ["migration", "v3-to-v4", "shadow", "scale"]
 ---
 
 ## Shadow Scale Shift

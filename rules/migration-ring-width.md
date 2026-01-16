@@ -1,8 +1,8 @@
 ---
-title: Ring Requires Explicit Width
-impact: CRITICAL
-impactDescription: Ring won't display without width
-tags: migration, v3-to-v4, ring, focus
+title: "Ring Requires Explicit Width"
+impact: "CRITICAL"
+impactDescription: "Visual regression risk: default ring is invisible (0px) in v4."
+tags: ["migration", "v3-to-v4", "ring", "focus"]
 ---
 
 ## Ring Requires Explicit Width

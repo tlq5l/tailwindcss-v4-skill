@@ -1,7 +1,7 @@
 ---
 title: "Gradient Color Interpolation"
-impact: "Controls color space for gradient transitions"
-impactDescription: "v4 allows specifying the color interpolation method for gradients, enabling smoother or more vibrant transitions."
+impact: "MEDIUM"
+impactDescription: "Smoother gradients using modern color spaces (OKLCH, SRGB, HSL)."
 tags: ["utilities", "gradients", "color-interpolation"]
 ---
 
@@ -41,3 +41,5 @@ Same syntax applies to `bg-conic` and `bg-radial`.
 ```html
 <div class="bg-radial/oklch from-white to-black"></div>
 ```
+
+Reference: [Gradients](https://tailwindcss.com/docs/background-image)

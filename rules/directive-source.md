@@ -1,7 +1,7 @@
 ---
 title: "@source Directive"
-impact: "Specifies content files for Tailwind to scan"
-impactDescription: "Use @source to explicitly tell Tailwind which files to scan for classes, especially when they are outside the default detection paths."
+impact: "HIGH"
+impactDescription: "Ensures no class is missed in non-standard project structures."
 tags: ["directive", "source", "configuration"]
 ---
 

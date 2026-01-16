@@ -1,7 +1,7 @@
 ---
 title: "New Tailwind v4 Variants"
-impact: "Adds support for new browser features and state selectors"
-impactDescription: "v4 introduces new variants for modern CSS features like container queries, starting styles, details elements, and more."
+impact: "HIGH"
+impactDescription: "Eliminates need for 3rd-party plugins (container queries, starting styles)."
 tags: ["variants", "new-features", "v4"]
 ---
 
@@ -57,3 +57,5 @@ Target the content of a `<details>` element.
 - `in-range:` / `out-of-range:`
 - `read-only:`
 - `user-valid:` / `user-invalid:`
+
+Reference: [Hover, Focus, and Other States](https://tailwindcss.com/docs/hover-focus-and-other-states)

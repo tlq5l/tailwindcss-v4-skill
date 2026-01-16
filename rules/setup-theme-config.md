@@ -1,8 +1,8 @@
 ---
-title: Theme Configuration with @theme
-impact: CRITICAL
-impactDescription: Core v4 pattern - replaces tailwind.config.js
-tags: setup, theme, configuration, css-variables
+title: "Theme Configuration with @theme"
+impact: "CRITICAL"
+impactDescription: "Core v4 pattern: CSS-native configuration eliminates context switching."
+tags: ["setup", "theme", "configuration", "css-variables"]
 ---
 
 ## Theme Configuration with @theme

@@ -1,8 +1,8 @@
 ---
-title: Dark Mode Configuration
-impact: HIGH
-impactDescription: Default changed from media to class
-tags: migration, dark, mode, variants
+title: "Dark Mode Configuration"
+impact: "HIGH"
+impactDescription: "Default changed to system preference; requires explicit config for class strategy."
+tags: ["migration", "dark", "mode", "variants"]
 ---
 
 ## Dark Mode Configuration

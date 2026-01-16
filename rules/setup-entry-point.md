@@ -1,8 +1,8 @@
 ---
-title: CSS Entry Point
-impact: CRITICAL
-impactDescription: Build will fail with old directives
-tags: setup, v3-to-v4, import, directives
+title: "CSS Entry Point"
+impact: "CRITICAL"
+impactDescription: "Standardizes import; replaces multiple directives with single entry point."
+tags: ["setup", "v3-to-v4", "import", "directives"]
 ---
 
 ## CSS Entry Point

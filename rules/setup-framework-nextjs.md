@@ -1,8 +1,8 @@
 ---
-title: Next.js App Router Integration
-impact: CRITICAL
-impactDescription: Required for Next.js projects
-tags: setup, nextjs, framework, integration
+title: "Next.js App Router Integration"
+impact: "CRITICAL"
+impactDescription: "Eliminates JS config overhead, enables zero-runtime CSS with Next.js."
+tags: ["setup", "nextjs", "framework", "integration"]
 ---
 
 ## Next.js App Router Integration

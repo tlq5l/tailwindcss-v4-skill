@@ -1,8 +1,8 @@
 ---
-title: Native Container Queries
-impact: HIGH
-impactDescription: No plugin needed in v4
-tags: migration, container, queries, responsive
+title: "Native Container Queries"
+impact: "HIGH"
+impactDescription: "No plugin needed; native syntax simpler and more performant."
+tags: ["migration", "container", "queries", "responsive"]
 ---
 
 ## Native Container Queries

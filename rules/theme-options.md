@@ -1,7 +1,7 @@
 ---
 title: "@theme Configuration Flags"
-impact: "Controls how the theme is applied (default, inline, static, reference)"
-impactDescription: "Use flags with @theme to control theme behavior, such as importing the default theme, inlining theme values, or creating static themes."
+impact: "MEDIUM"
+impactDescription: "Fine-grained control over theme application and CSS variable generation."
 tags: ["directive", "theme", "configuration"]
 ---
 
@@ -59,3 +59,5 @@ To clear an existing namespace (e.g., to remove all default colors), set the nam
   --color-brand: #3b82f6; /* Only this color remains */
 }
 ```
+
+Reference: [Theme Configuration](https://tailwindcss.com/docs/theme)

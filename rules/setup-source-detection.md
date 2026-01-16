@@ -1,8 +1,8 @@
 ---
-title: Source Detection and Safelisting
-impact: HIGH
-impactDescription: Controls which classes get generated
-tags: setup, source, detection, safelist
+title: "Source Detection and Safelisting"
+impact: "HIGH"
+impactDescription: "Auto-detection reduces config; explicit control ensures critical classes exist."
+tags: ["setup", "source", "detection", "safelist"]
 ---
 
 ## Source Detection and Safelisting

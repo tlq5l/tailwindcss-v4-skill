@@ -1,8 +1,8 @@
 ---
-title: Custom Variants with @variant
-impact: HIGH
-impactDescription: Define custom variants in CSS
-tags: customization, variants, directives
+title: "Custom Variants with @variant"
+impact: "HIGH"
+impactDescription: "Enables complex state targeting directly in CSS without plugins."
+tags: ["customization", "variants", "directives"]
 ---
 
 ## Custom Variants with @variant
