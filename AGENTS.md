@@ -595,6 +595,189 @@ Reference: [Upgrade Guide](https://tailwindcss.com/docs/upgrade-guide)
 
 ## Customization
 
+## Custom Variants
+
+Use `@custom-variant` for advanced selector logic beyond built-in variants.
+
+**Dark mode with class strategy:**
+
+```css
+@custom-variant dark (&:is(.dark *));
+```
+
+This creates a `dark:` variant that matches elements inside a `.dark` parent.
+
+**Usage:**
+
+```html
+<html class="dark">
+  <body class="bg-white dark:bg-black">
+    <!-- dark:bg-black applies -->
+  </body>
+</html>
+```
+
+**Multiple selectors:**
+
+```css
+@custom-variant hocus (&:hover, &:focus);
+@custom-variant group-hocus (:merge(.group):hover &, :merge(.group):focus &);
+```
+
+**Print variant:**
+
+```css
+@custom-variant print (@media print);
+```
+
+**vs @variant:**
+
+```css
+/* @variant - simple selector list */
+@variant hocus (&:hover, &:focus);
+
+/* @custom-variant - same syntax, preferred for clarity */
+@custom-variant hocus (&:hover, &:focus);
+```
+
+Both work identically. `@custom-variant` is more explicit about intent.
+
+Reference: [Custom Variants](https://tailwindcss.com/docs/adding-custom-styles#adding-custom-variants)
+
+---
+
+## New Gradient Syntax
+
+Tailwind v4 introduces cleaner gradient utilities.
+
+**Linear gradients:**
+
+```html
+<!-- v4 syntax -->
+<div class="bg-linear-to-r from-blue-500 to-purple-500"></div>
+<div class="bg-linear-to-b from-foreground to-foreground/70"></div>
+
+<!-- Direction variants -->
+bg-linear-to-t    <!-- top -->
+bg-linear-to-tr   <!-- top-right -->
+bg-linear-to-r    <!-- right -->
+bg-linear-to-br   <!-- bottom-right -->
+bg-linear-to-b    <!-- bottom -->
+bg-linear-to-bl   <!-- bottom-left -->
+bg-linear-to-l    <!-- left -->
+bg-linear-to-tl   <!-- top-left -->
+```
+
+**vs v3 syntax:**
+
+```html
+<!-- v3 (still works) -->
+<div class="bg-gradient-to-r from-blue-500 to-purple-500"></div>
+
+<!-- v4 preferred -->
+<div class="bg-linear-to-r from-blue-500 to-purple-500"></div>
+```
+
+**Radial gradients:**
+
+```html
+<div class="bg-radial from-white to-transparent"></div>
+<div class="bg-radial-[at_top] from-sky-500 to-transparent"></div>
+```
+
+**Conic gradients:**
+
+```html
+<div class="bg-conic from-red-500 via-yellow-500 to-red-500"></div>
+```
+
+**With arbitrary values:**
+
+```html
+<div class="bg-linear-[45deg] from-pink-500 to-orange-500"></div>
+<div class="bg-radial-[circle_at_top] from-blue-500 to-transparent"></div>
+```
+
+**Text gradients:**
+
+```css
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-linear-to-b from-foreground to-foreground/70;
+}
+```
+
+Reference: [Gradients](https://tailwindcss.com/docs/background-image)
+
+---
+
+## Theme Inline Modifier
+
+Use `@theme inline` to preserve CSS variables in output alongside utilities.
+
+**Standard @theme:**
+
+```css
+@theme {
+  --font-sans: "Inter", sans-serif;
+}
+```
+
+Variables used for utility generation but NOT emitted as CSS variables.
+
+**With inline modifier:**
+
+```css
+@theme inline {
+  --font-sans: "SF Pro Text", system-ui, sans-serif;
+  --color-primary: #0066cc;
+}
+```
+
+Variables ARE emitted as CSS custom properties AND used for utilities.
+
+**Output difference:**
+
+```css
+/* @theme (no inline) - only utilities generated */
+.font-sans { font-family: Inter, sans-serif; }
+
+/* @theme inline - variables preserved */
+:root {
+  --font-sans: SF Pro Text, system-ui, sans-serif;
+  --color-primary: #0066cc;
+}
+.font-sans { font-family: var(--font-sans); }
+```
+
+**When to use inline:**
+
+- Shadcn/Radix design systems that reference CSS vars
+- Dynamic theming with JavaScript
+- Sharing variables between Tailwind and custom CSS
+
+**Combining with :root:**
+
+```css
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #f5f5f7;
+}
+```
+
+Reference: [Theme Configuration](https://tailwindcss.com/docs/theme)
+
+---
+
 ## Custom Utilities with @utility
 
 v4 uses `@utility` directive to define custom utilities that work with variants. This replaces the v3 `@layer utilities` pattern.
@@ -691,4 +874,4 @@ Reference: [Functions and Directives](https://tailwindcss.com/docs/functions-and
 
 ---
 
-*Generated from 13 rules. Verified 15/15 tests passing.*
+*Generated from 16 rules. Verified 15/15 tests passing.*
