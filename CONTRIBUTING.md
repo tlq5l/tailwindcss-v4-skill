@@ -45,11 +45,10 @@ tags: comma, separated, tags
 }
 ```
 
-5. Run the build and validation:
+5. Run the build:
 
 ```bash
 bun run build      # Compile rules → AGENTS.md
-bun run validate   # Must pass 100%
 ```
 
 ## Impact Levels
@@ -61,21 +60,10 @@ bun run validate   # Must pass 100%
 | MEDIUM | Should learn for proper v4 usage |
 | LOW | Nice to know, edge cases |
 
-## Validation Philosophy
-
-This skill uses **unfakeable validation**:
-
-- `src/validate.ts` runs real Tailwind CLI
-- Exit codes cannot be faked
-- Source verification greps actual repo files
-
-If your rule involves CSS compilation, add an execution test to `validate.ts`.
-
 ## Pull Request Checklist
 
 - [ ] Rule follows frontmatter template
 - [ ] Incorrect/Correct examples provided
 - [ ] Test cases added to `test-cases.json`
 - [ ] `bun run build` succeeds
-- [ ] `bun run validate` passes 100%
 - [ ] Reference link to official docs included

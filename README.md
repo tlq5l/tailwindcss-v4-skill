@@ -1,5 +1,7 @@
 # Tailwind CSS v4 Skill
 
+> Inspired by [Vercel's agent-skills](https://github.com/vercel-labs/agent-skills)
+
 AI-agent skill for Tailwind CSS v4 patterns, migration, and best practices.
 
 ## What is this?
@@ -21,28 +23,9 @@ tailwindcss-v4/
 │   ├── migration-*.md  # v3 → v4 migration
 │   └── customization-*.md  # Custom utilities/variants
 ├── test-cases.json     # Bad/good code pairs for testing
-├── metadata.json       # Version, status, test results
 └── src/
     ├── build.ts        # Compiles rules → AGENTS.md
-    ├── validate.ts     # Unfakeable validation (real CLI)
-    └── test-llm.ts     # LLM evaluation runner
-```
-
-## Validation
-
-This skill includes **unfakeable validation** - tests that run real Tailwind CLI and grep actual source code. No AI opinions, only facts.
-
-```bash
-bun run validate
-```
-
-Output:
-```
-LAYER 1: EXECUTION TESTS (real Tailwind CLI)
-LAYER 2: SOURCE VERIFICATION (grep against repo)
-
-TOTAL: 15/15 (100%)
-✅ ALL TESTS PASS - VERIFIED
+    └── validate.ts     # CLI validation tests
 ```
 
 ## Key v4 Patterns
@@ -91,9 +74,6 @@ bun run build
 
 # Run validation
 bun run validate
-
-# Test LLM comprehension
-bun run test:llm
 ```
 
 ## Contributing
@@ -101,8 +81,7 @@ bun run test:llm
 1. Add/edit rules in `rules/*.md`
 2. Add test cases to `test-cases.json`
 3. Run `bun run build`
-4. Run `bun run validate` - must pass 100%
-5. Submit PR
+4. Submit PR
 
 ## License
 
