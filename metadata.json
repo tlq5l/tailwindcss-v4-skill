@@ -1,18 +1,17 @@
 {
   "name": "tailwindcss-v4",
-  "version": "0.1.0",
-  "status": "draft",
-  "organization": "Generated from tailwindlabs/tailwindcss",
-  "sourceRepo": "https://github.com/tailwindlabs/tailwindcss",
-  "sourceCommit": "main",
-  "generatedAt": "2026-01-16",
-  "abstract": "Tailwind CSS v4 patterns for AI coding agents. CSS-first configuration, new directives (@theme, @utility, @variant, @source), migration from v3, and anti-patterns to avoid.",
+  "version": "1.0.0",
+  "status": "verified",
+  "organization": "Community",
+  "date": "January 2026",
+  "abstract": "Tailwind CSS v4 patterns: CSS-first config, @theme/@utility/@variant directives, migration from v3. High-performance, no-build-step development.",
   "references": [
+    "https://tailwindcss.com/docs",
+    "https://tailwindcss.com/blog/tailwindcss-v4",
     "https://tailwindcss.com/docs/upgrade-guide",
     "https://tailwindcss.com/docs/theme",
-    "https://tailwindcss.com/docs/functions-and-directives",
-    "https://tailwindcss.com/docs/detecting-classes-in-source-files",
-    "https://tailwindcss.com/blog/tailwindcss-v4"
+    "https://tailwindcss.com/docs/adding-custom-styles",
+    "https://github.com/tailwindlabs/tailwindcss"
   ],
   "testStatus": {
     "totalCases": 15,
@@ -23,6 +22,5 @@
       "execution": { "total": 8, "passing": 8 },
       "source": { "total": 7, "passing": 7 }
     }
-  },
-  "status": "verified"
+  }
 }

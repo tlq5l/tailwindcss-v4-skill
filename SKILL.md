@@ -175,4 +175,4 @@ export default {
 }
 ```
 
-Reference: [Tailwind v4 Docs](https://tailwindcss.com/docs)
+Sources: [Tailwind v4 Docs](https://tailwindcss.com/docs), [GitHub](https://github.com/tailwindlabs/tailwindcss)
