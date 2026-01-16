@@ -43,4 +43,9 @@ v4 uses `@variant` to define custom variants directly in CSS.
 }
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Readability:** If a custom variant hides too much logic (e.g., `fancy-state:`), it might be unclear to others what triggers it.
+- **Arbitrary variants:** For one-off needs, use arbitrary variants like `[.active_&]:` instead of defining a global custom variant.
+
 Reference: [Functions and Directives](https://tailwindcss.com/docs/functions-and-directives)

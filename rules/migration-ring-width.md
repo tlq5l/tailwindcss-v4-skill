@@ -25,4 +25,9 @@ v4 changed `ring` to require an explicit width. The default `ring` utility no lo
 
 **Available widths:** `ring-0`, `ring-1`, `ring-2`, `ring-3`, `ring-4`, `ring-8`
 
+**Trade-offs / When NOT to use:**
+
+- **Custom focus styles:** If you are implementing custom focus styles (e.g. `outline`), you don't need `ring` at all.
+- **Visual clutter:** Avoid adding rings to every interactive element indiscriminately; rely on `:focus-visible` to only show rings when navigating via keyboard.
+
 Reference: [Upgrade Guide](https://tailwindcss.com/docs/upgrade-guide)

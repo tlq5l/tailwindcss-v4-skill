@@ -52,4 +52,9 @@ This creates a `dark:` variant that matches elements inside a `.dark` parent.
 
 Both work identically. `@custom-variant` is more explicit about intent.
 
+**Trade-offs / When NOT to use:**
+
+- **Complexity:** Overusing custom variants can make class lists hard to read for new developers.
+- **Built-in alternatives:** Check if a built-in variant (like `group-hover` or `peer-checked`) already exists before creating a custom one.
+
 Reference: [Custom Variants](https://tailwindcss.com/docs/adding-custom-styles#adding-custom-variants)

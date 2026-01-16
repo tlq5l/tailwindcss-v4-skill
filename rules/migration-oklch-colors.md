@@ -68,4 +68,9 @@ v4 uses OKLCH color space by default. Colors appear more vibrant but may look di
 }
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Legacy browser support:** OKLCH support is excellent in modern browsers but lacks support in older ones (though Tailwind includes fallbacks).
+- **Exact brand matching:** If you have strict brand guidelines defined in RGB/Hex, using OKLCH conversion might result in extremely subtle differences. Stick to the definition format if critical.
+
 Reference: [Colors](https://tailwindcss.com/docs/colors)

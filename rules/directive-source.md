@@ -36,3 +36,10 @@ Use `source(none)` to disable automatic source detection:
 @source "none";
 @source "../manual-path/**/*.js";
 ```
+
+**Trade-offs / When NOT to use:**
+
+- **Standard projects:** If your project structure is standard (src/), auto-detection usually works fine without manual `@source` directives.
+- **Maintenance:** Manually listing sources requires updates when you add new directories, which can be error-prone.
+
+Reference: [Functions and Directives](https://tailwindcss.com/docs/functions-and-directives)

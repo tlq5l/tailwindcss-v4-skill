@@ -60,4 +60,9 @@ To clear an existing namespace (e.g., to remove all default colors), set the nam
 }
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Over-engineering:** Don't use `static` or `reference` unless you have a specific reason (like multiple theme files or preventing variable duplication). The default behavior is usually correct.
+- **Clearing defaults:** Be careful with `--color-*: initial`. It removes ALL default colors, meaning `bg-white`, `text-black`, etc., will stop working unless you redefine them.
+
 Reference: [Theme Configuration](https://tailwindcss.com/docs/theme)

@@ -69,4 +69,9 @@ module.exports = {
 @variant dark (&:is(.dark, .dark *));
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **System preference:** If you don't need a toggle button, the default `media` strategy is better (zero config).
+- **Complexity:** Manually managing the `.dark` class requires JS code.
+
 Reference: [Dark Mode](https://tailwindcss.com/docs/dark-mode)

@@ -65,4 +65,9 @@ bg-linear-to-tl   <!-- top-left -->
 }
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Legacy support:** If you must support very old browsers that don't handle modern gradient syntax well (rare now).
+- **Complexity:** Complex multi-stop gradients can be harder to read in utility classes than in CSS.
+
 Reference: [Gradients](https://tailwindcss.com/docs/background-image)

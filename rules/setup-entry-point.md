@@ -36,4 +36,9 @@ v4 uses `@import 'tailwindcss'` as the single entry point. The v3 `@tailwind` di
 @import 'tailwindcss' source(none);
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Existing v3 projects not ready to migrate:** Only use `@import "tailwindcss"` if you have fully upgraded to v4, including the PostCSS plugin.
+- **Complex v3 configurations:** Some highly customized v3 setups might need careful migration of config before switching the entry point.
+
 Reference: [Functions and Directives](https://tailwindcss.com/docs/functions-and-directives)

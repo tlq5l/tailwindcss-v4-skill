@@ -64,4 +64,9 @@ module.exports = {
 <div class="@lg:hidden">Hidden in large containers</div>
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Browser support:** Ensure your target browsers support CSS container queries (modern browsers generally do).
+- **Layout thrashing:** Overusing container queries in deeply nested structures might have performance implications in very complex apps, though generally negligible.
+
 Reference: [Container Queries](https://tailwindcss.com/docs/container-queries)

@@ -62,4 +62,9 @@ className={`bg-${color}-500`}
 className={color === 'red' ? 'bg-red-500' : 'bg-blue-500'}
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Dynamic classes:** Avoid `bg-${color}-500` patterns completely. If you must use them, you MUST safelist every possible combination using `@source inline(...)`.
+- **Large safelists:** Safelisting large numbers of classes increases CSS size. Prefer mapping full class names in your code or using `clsx`/`cva`.
+
 Reference: [Detecting Classes](https://tailwindcss.com/docs/detecting-classes-in-source-files)

@@ -37,4 +37,9 @@ This applies to all arbitrary values that reference CSS variables:
 <div class="text-[var(--heading-size)]">
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Verbosity:** It's more verbose.
+- **Theme Variables:** If the variable is defined in your theme (e.g. `--color-primary`), use the utility class `bg-primary` instead of `bg-[var(--color-primary)]`.
+
 Reference: [Upgrade Guide](https://tailwindcss.com/docs/upgrade-guide)

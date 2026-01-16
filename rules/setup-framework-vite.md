@@ -54,4 +54,9 @@ export default {
 - `@tailwindcss/postcss` - For non-Vite builds
 - No `autoprefixer` needed - v4 handles prefixes
 
+**Trade-offs / When NOT to use:**
+
+- **PostCSS plugins:** If your project relies heavily on other PostCSS plugins that need to run *before* Tailwind, you might need the PostCSS integration instead of the Vite plugin.
+- **Complex build chains:** Some complex monorepo setups might behave more predictably with the standard PostCSS integration initially.
+
 Reference: [Installation - Vite](https://tailwindcss.com/docs/installation/vite)

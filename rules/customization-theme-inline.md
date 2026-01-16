@@ -69,4 +69,9 @@ Variables ARE emitted as CSS custom properties AND used for utilities.
 }
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Bundle size:** Emitting variables adds to CSS size. Only use `inline` if you actually need to access the variables via `var(--...)` in other contexts or JS.
+- **Default behavior:** By default, use standard `@theme` to keep the output CSS minimal.
+
 Reference: [Theme Configuration](https://tailwindcss.com/docs/theme)

@@ -34,4 +34,9 @@ v4 shifted the shadow scale down by one step. What was `shadow` in v3 is now `sh
 | `shadow-xl` | `shadow-lg` |
 | `shadow-2xl` | `shadow-xl` |
 
+**Trade-offs / When NOT to use:**
+
+- **New designs:** If designing a new UI from scratch, prefer using the new v4 scale as is (simply use `shadow-md` if you want a medium shadow) rather than strictly mapping to v3. The mapping is only critical for migration.
+- **Custom shadows:** If the built-in scale doesn't fit, use arbitrary values `shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]` or define custom theme variables.
+
 Reference: [Upgrade Guide](https://tailwindcss.com/docs/upgrade-guide)

@@ -42,4 +42,9 @@ Same syntax applies to `bg-conic` and `bg-radial`.
 <div class="bg-radial/oklch from-white to-black"></div>
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Complexity:** Simple gradients usually don't need explicit interpolation control. The default (oklch) is almost always what you want.
+- **Browser compatibility:** While fallbacks exist, extremely specific interpolation modes might look slightly different on very old browsers.
+
 Reference: [Gradients](https://tailwindcss.com/docs/background-image)

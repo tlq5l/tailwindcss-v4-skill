@@ -46,3 +46,10 @@ Usage:
 
 ### Circular Dependencies
 Avoid circular dependencies where variants reference each other in a loop.
+
+**Trade-offs / When NOT to use:**
+
+- **Complexity:** Complex selectors can be hard to debug. Keep custom variants simple.
+- **Performance:** Excessive use of complex selectors (like universal selectors `*` or deep nesting) can impact rendering performance.
+
+Reference: [Functions and Directives](https://tailwindcss.com/docs/functions-and-directives)

@@ -58,4 +58,9 @@ Target the content of a `<details>` element.
 - `read-only:`
 - `user-valid:` / `user-invalid:`
 
+**Trade-offs / When NOT to use:**
+
+- **Browser support:** Some new variants (like `starting-style` or `details-content`) depend on newer browser features. Check "Can I Use" if supporting older Safari/Firefox versions is critical.
+- **Polyfills:** Unlike utility classes that compile to simple CSS, some pseudo-elements/variants might not have easy polyfills if the browser lacks support.
+
 Reference: [Hover, Focus, and Other States](https://tailwindcss.com/docs/hover-focus-and-other-states)

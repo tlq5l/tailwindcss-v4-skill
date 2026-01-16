@@ -59,4 +59,9 @@ module.exports = {
 }
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Trade-off:** CSS-first is cleaner but may offer less IDE autocomplete initially than JS config until tooling catches up.
+- **Complex logic:** If your theme relies on complex JavaScript logic, calculations, or external node modules, `tailwind.config.js` is still supported and might be better.
+
 Reference: [Theme Variables](https://tailwindcss.com/docs/theme)

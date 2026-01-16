@@ -67,4 +67,9 @@ module.exports = {
 next dev --turbo
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **Legacy Pages Router:** While v4 works, existing complex v3 setups in Pages Router might require significant refactoring.
+- **Turbopack:** Ensure you're on a recent Next.js version as v4 + Turbopack support is continuously improving.
+
 Reference: [Installation - Next.js](https://tailwindcss.com/docs/installation/nextjs)

@@ -45,4 +45,9 @@ v4 uses `@utility` directive to define custom utilities that work with variants.
 /* Usage: tab-2, tab-4, tab-8 based on --tab-size-* variables */
 ```
 
+**Trade-offs / When NOT to use:**
+
+- **One-off styles:** For styles used only once, arbitrary values (`[content-visibility:auto]`) or inline styles are often better than polluting the global CSS with a custom utility.
+- **Complex components:** If a utility grows into a complex set of styles, consider extracting it into a React/Vue component instead.
+
 Reference: [Functions and Directives](https://tailwindcss.com/docs/functions-and-directives)
