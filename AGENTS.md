@@ -874,4 +874,4 @@ Reference: [Functions and Directives](https://tailwindcss.com/docs/functions-and
 
 ---
 
-*Generated from 16 rules. Verified 15/15 tests passing.*
+*Generated from 21 rules. Verified 15/15 tests passing.*

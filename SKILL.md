@@ -70,39 +70,69 @@ module.exports = {
   content-visibility: auto;
 }
 
-@utility scrollbar-hidden {
-  scrollbar-width: none;
-  &::-webkit-scrollbar { display: none; }
+/* Functional utility must end in -* */
+@utility tab-* {
+  --tab-size: --value(--spacing-*, [integer]);
+  tab-size: var(--tab-size);
 }
 ```
 
 ## Custom Variants
 
+Use `@custom-variant` to define new variants (not `@variant`).
+
 ```css
-@variant hocus (&:hover, &:focus);
+@custom-variant hocus (&:hover, &:focus);
 
 /* Dark mode with class strategy */
 @custom-variant dark (&:is(.dark *));
+
+/* Body block with @slot */
+@custom-variant hocus {
+  &:hover, &:focus { @slot; }
+}
 ```
 
-## Theme Inline (preserve CSS vars)
+## Theme Configuration
 
 ```css
-/* Variables emitted AND used for utilities */
+@theme {
+  --color-primary: #3b82f6;
+
+  /* Clear namespace */
+  --color-*: initial;
+}
+```
+
+## Theme Flags
+
+- `default`: Merge with default theme
+- `inline`: Emit variables to output
+- `static`: Use values but don't emit vars
+- `reference`: Use values but don't emit CSS
+
+```css
 @theme inline {
   --font-sans: "SF Pro Text", system-ui;
-  --color-primary: #0066cc;
 }
 ```
 
 ## New Gradient Syntax
 
 ```html
-<!-- v4 preferred -->
-<div class="bg-linear-to-r from-blue-500 to-purple-500"></div>
+<!-- v4 preferred - supports interpolation color space -->
+<div class="bg-linear-to-r/oklch from-blue-500 to-purple-500"></div>
 
 <!-- Also: bg-linear-to-b, bg-radial, bg-conic -->
 ```
+
+## New Variants
+
+- `@min-[400px]:` / `@max-[600px]:` (Container queries)
+- `starting:` (`@starting-style`)
+- `details-content:` (`::details-content`)
+- `inverted-colors:`, `noscript:`, `print:`
+
 
 ## Safelisting Classes
 
